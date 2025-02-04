@@ -1,0 +1,58 @@
+﻿@*This is a index file of Cinemas*@
+
+@* Define model*@
+@model IEnumerable<Cinema>
+
+@*Define view data*@
+@{
+    ViewData["Title"] = "List of Cinemas";
+}
+
+@*Define HTML Code*@
+
+
+<div class="row">
+    <div class="col-md-8 off-set-2">
+        <table class="table">
+            <thead class="text-center">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Logo)</th>
+                    <th>@Html.DisplayNameFor(model => model.Name)</th>
+                    <th>@Html.DisplayNameFor(model => model.Description)</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="align-middle">
+                            <img src="@item.Logo"
+                                 alt="@item.Name"
+                                 style="max-width:150px" />
+                        </td>
+                    
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                  
+                        <td class="align-middle">
+                            @Html.DisplayFor(modelItem => item.Description)
+                        </td>
+
+                        <td class="align-middle">
+                            <a href="#"
+                               class="btn btn-outline-primary">
+                                <i class="bi bi-pencil-squared"></i> Edit
+                            </a> |
+                            <a href="#"
+                               class="btn btn-danger">
+                                <i class="bi bi-trash"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
