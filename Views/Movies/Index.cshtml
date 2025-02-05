@@ -52,19 +52,4 @@
     </table>
     </div>*@
 
-
-
-    @foreach (var item in Model)
-    {
-        <div class=" col-sm">
-            <div class="card" style="Width:18rem">
-                <div class="card-title"> @Html.DisplayFor(modelItem =>item.Name)</div>
-                <div class="card-body">
-                    @Html.DisplayFor(modelItem =>item.Description)
-                    <a href="#" class-"btn-btn-primary">Btn as link</a>
-                </div>
-
-            </div>
-        </div>
-    }
 </div>
