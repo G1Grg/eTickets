@@ -1,4 +1,5 @@
 using eTickets.Data;
+using eTickets.Data.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,8 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
     ));
 
 builder.Services.AddControllersWithViews();
+//using scoped lifetime,injecting IActorsService, and implementing the interface 
+builder.Services.AddScoped<IActorsService, ActorsService>();
 
 var app = builder.Build();
 
