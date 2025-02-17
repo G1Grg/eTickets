@@ -7,13 +7,13 @@ namespace eTickets.Data.Services
         // Define 5 methods to be used for implementation
 
         //List all the actors
-        Task<IEnumerable<Actor>> GetAll();
+        Task<IEnumerable<Actor>> GetAllAsync();
 
         //Select only one actor
-        Actor GetById(int id);
+        Task <Actor> GetByIdAsync(int id);
 
         //Add data to database
-        void Add(Actor actor);
+        Task AddAsync(Actor actor);
 
         //update data to database
 
