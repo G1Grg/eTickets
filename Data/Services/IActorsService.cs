@@ -21,6 +21,6 @@ namespace eTickets.Data.Services
 
         //Delete Data from database
 
-        void Delete(int id);
+        Task DeleteAsync(int id);
     }
 }
