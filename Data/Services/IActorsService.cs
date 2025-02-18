@@ -17,7 +17,7 @@ namespace eTickets.Data.Services
 
         //update data to database
 
-        Actor Update(int id, Actor newActor);
+        Task <Actor> UpdateAsync(int id, Actor newActor);
 
         //Delete Data from database
 
