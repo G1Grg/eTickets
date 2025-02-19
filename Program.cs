@@ -12,6 +12,8 @@ builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
 builder.Services.AddControllersWithViews();
 //using scoped lifetime,injecting IActorsService, and implementing the interface 
 builder.Services.AddScoped<IActorsService, ActorsService>();
+builder.Services.AddScoped<IProducersService, ProducersServices>();
+
 
 var app = builder.Build();
 
