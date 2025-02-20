@@ -23,7 +23,7 @@ namespace eTickets.Data.Base
         {
             var entity = await _context.Set<T>().FirstOrDefaultAsync(n => n.Id == id);
             EntityEntry entityEntry = _context.Entry<T>(entity);
-            entityEntry.State = EntityState.Modified;
+            entityEntry.State = EntityState.Deleted; 
 
             await _context.SaveChangesAsync();
         }
