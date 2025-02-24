@@ -1,4 +1,5 @@
 ﻿using eTickets.Models;
+using System.Linq.Expressions;
 
 namespace eTickets.Data.Base
 {
@@ -9,6 +10,8 @@ namespace eTickets.Data.Base
 
         //List all the actors
         Task<IEnumerable<T>> GetAllAsync();
+
+        Task<IEnumerable<T>> GetAllAsync(params Expression<Func<T, object>>[] includeProperties);
 
         //Select only one actor
         Task<T> GetByIdAsync(int id);
