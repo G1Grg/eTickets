@@ -22,9 +22,10 @@
                             <p class="card-text">
                                 <h5 class="card-title">
                                     @item.Name
-                                    {
-                                    <a class="text-white float-right"><i class="bi bi-pencil-square"></i></a>
-                                    }
+                                    
+                                    <a class="text-white float-right" asp-action="Edit" asp-route-id="@item.Id">
+                                        <i class="bi bi-pencil-square"></i></a>
+                                    
                                 </h5>
                             </p>
                         </div>
@@ -74,4 +75,9 @@
             </div>
         </div>
     }
+</div>
+
+
+<div class="text-white" style="position:fixed; right:25px; bottom:25px">
+    <a asp-controller="Movies" asp-action="Create" class="btn btn-success"><i class="bi bi-plus-circle"></i> Add New</a>
 </div>

@@ -220,6 +220,62 @@ namespace eTickets.Data
                         new Actor_Movie()
                         {
                             ActorId = 1,
+                            MovieId = 1
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 3,
+                            MovieId = 1
+                        },
+
+                         new Actor_Movie()
+                        {
+                            ActorId = 1,
+                            MovieId = 2
+                        },
+                         new Actor_Movie()
+                        {
+                            ActorId = 4,
+                            MovieId = 2
+                        },
+
+                        new Actor_Movie()
+                        {
+                            ActorId = 1,
+                            MovieId = 3
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 2,
+                            MovieId = 3
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 5,
+                            MovieId = 3
+                        },
+
+
+                        new Actor_Movie()
+                        {
+                            ActorId = 2,
+                            MovieId = 4
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 3,
+                            MovieId = 4
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 4,
+                            MovieId = 4
+                        },
+
+
+                        new Actor_Movie()
+                        {
+                            ActorId = 2,
                             MovieId = 5
                         },
                         new Actor_Movie()
@@ -227,87 +283,32 @@ namespace eTickets.Data
                             ActorId = 3,
                             MovieId = 5
                         },
-
-                         new Actor_Movie()
+                        new Actor_Movie()
                         {
-                            ActorId = 1,
+                            ActorId = 4,
+                            MovieId = 5
+                        },
+                        new Actor_Movie()
+                        {
+                            ActorId = 5,
+                            MovieId = 5
+                        },
+
+
+                        new Actor_Movie()
+                        {
+                            ActorId = 3,
                             MovieId = 6
                         },
-                         new Actor_Movie()
+                        new Actor_Movie()
                         {
                             ActorId = 4,
                             MovieId = 6
                         },
-
-                        new Actor_Movie()
-                        {
-                            ActorId = 1,
-                            MovieId = 7
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 2,
-                            MovieId = 7
-                        },
                         new Actor_Movie()
                         {
                             ActorId = 5,
-                            MovieId = 7
-                        },
-
-
-                        new Actor_Movie()
-                        {
-                            ActorId = 2,
-                            MovieId = 8
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 3,
-                            MovieId = 8
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 4,
-                            MovieId = 8
-                        },
-
-
-                        new Actor_Movie()
-                        {
-                            ActorId = 2,
-                            MovieId = 9
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 3,
-                            MovieId = 9
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 4,
-                            MovieId = 10
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 5,
-                            MovieId = 10
-                        },
-
-                        new Actor_Movie()
-                        {
-                            ActorId = 3,
-                            MovieId = 10
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 4,
-                            MovieId = 9
-                        },
-                        new Actor_Movie()
-                        {
-                            ActorId = 5,
-                            MovieId = 9
+                            MovieId = 6
                         },
                     });
                     context.SaveChanges();
@@ -316,5 +317,6 @@ namespace eTickets.Data
 
         }
     }
-}
 
+        }
+   
